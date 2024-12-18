@@ -1,0 +1,115 @@
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -novopt %work%.tbench_top 
+# Start time: 11:28:48 on Dec 18,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/modeltech64_10.5/examples/mem_tb_uvm/%work%.tbench_top
+# Refreshing C:/modeltech64_10.5/examples/mem_tb_uvm/%work%.mem_tb_top_sv_unit
+# Refreshing C:/modeltech64_10.5/examples/mem_tb_uvm/%work%.intf
+# Loading sv_std.std
+# Loading %work%.intf
+# Refreshing C:/modeltech64_10.5/examples/mem_tb_uvm/%work%.test_pack
+# Loading mtiUvm.uvm_pkg
+# Loading %work%.test_pack
+# Loading %work%.mem_tb_top_sv_unit
+# Loading %work%.tbench_top
+# Refreshing C:/modeltech64_10.5/examples/mem_tb_uvm/%work%.mem_16x32
+# Loading %work%.mem_16x32
+# Loading mtiUvm.questa_uvm_pkg
+# Loading C:/modeltech64_10.5/uvm-1.1d\win64\uvm_dpi.dll
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test my_test...
+# ** Warning: (vsim-8522) The number of coverpoint bins is zero for the coverpoint 'data_in' of covergroup instance '\/test_pack::my_subscriber::group_1 '. All the user defined bins in the coverpoint are empty bins and hence it would not contribute towards the overall coverage result.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8522) The number of coverpoint bins is zero for the coverpoint 'data_out' of covergroup instance '\/test_pack::my_subscriber::group_1 '. All the user defined bins in the coverpoint are empty bins and hence it would not contribute towards the overall coverage result.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+#                   10 :: driver sent transaction
+# recieved @ 11 xxxxxxxxxxxxxxxxx subscriber :: xxxxxxxx
+#                   20 :: driver sent transaction
+# recieved @ 21 xxxxxxxxxxxxxxxxx subscriber :: d11e730e
+#                   30 :: driver sent transaction
+# recieved @ 31 xxxxxxxxxxxxxxxxx subscriber :: f3c881a5
+#                   40 :: driver sent transaction
+# recieved @ 41 xxxxxxxxxxxxxxxxx subscriber :: 73ffa2f0
+#                   50 :: driver sent transaction
+# recieved @ 51 xxxxxxxxxxxxxxxxx subscriber :: bd14b650
+#                   60 :: driver sent transaction
+# recieved @ 61 xxxxxxxxxxxxxxxxx subscriber :: da80829e
+#                   70 :: driver sent transaction
+# recieved @ 71 xxxxxxxxxxxxxxxxx subscriber :: 8d4fac41
+#                   80 :: driver sent transaction
+# recieved @ 81 xxxxxxxxxxxxxxxxx subscriber :: a56bbbf5
+#                   90 :: driver sent transaction
+# UVM_ERROR @ 91: uvm_test_top.env.agent.sequencer@@seq [uvm_test_top.env.agent.sequencer.seq] Response queue overflow, response was dropped
+# recieved @ 91 xxxxxxxxxxxxxxxxx subscriber :: eed3dea9
+#                  100 :: driver sent transaction
+# UVM_ERROR @ 101: uvm_test_top.env.agent.sequencer@@seq [uvm_test_top.env.agent.sequencer.seq] Response queue overflow, response was dropped
+# recieved @ 101 xxxxxxxxxxxxxxxxx subscriber :: 45b9ba7b
+#                  110 :: driver sent transaction
+# UVM_ERROR @ 111: uvm_test_top.env.agent.sequencer@@seq [uvm_test_top.env.agent.sequencer.seq] Response queue overflow, response was dropped
+# recieved @ 111 xxxxxxxxxxxxxxxxx subscriber :: 2f732c32
+#                  120 :: driver sent transaction
+# UVM_ERROR @ 121: uvm_test_top.env.agent.sequencer@@seq [uvm_test_top.env.agent.sequencer.seq] Response queue overflow, response was dropped
+# recieved @ 121 xxxxxxxxxxxxxxxxx subscriber :: 034d3317
+#                  130 :: driver sent transaction
+# UVM_ERROR @ 131: uvm_test_top.env.agent.sequencer@@seq [uvm_test_top.env.agent.sequencer.seq] Response queue overflow, response was dropped
+# recieved @ 131 xxxxxxxxxxxxxxxxx subscriber :: 3dac9036
+#                  140 :: driver sent transaction
+# UVM_ERROR @ 141: uvm_test_top.env.agent.sequencer@@seq [uvm_test_top.env.agent.sequencer.seq] Response queue overflow, response was dropped
+# recieved @ 141 xxxxxxxxxxxxxxxxx subscriber :: 49b00ce8
+#                  150 :: driver sent transaction
+# UVM_ERROR @ 151: uvm_test_top.env.agent.sequencer@@seq [uvm_test_top.env.agent.sequencer.seq] Response queue overflow, response was dropped
+# recieved @ 151 xxxxxxxxxxxxxxxxx subscriber :: 00ea57c9
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 151: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    7
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [uvm_test_top.env.agent.sequencer.seq]     7
+# ** Note: $finish    : C:/modeltech64_10.5/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 151 ns  Iteration: 60  Instance: /tbench_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/modeltech64_10.5/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 11:29:06 on Dec 18,2024, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 3
